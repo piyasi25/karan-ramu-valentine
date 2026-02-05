@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Karan ❤️</title>
+
+<style>
+body{
+background:linear-gradient(to right,#ff758c,#ff7eb3);
+font-family:Arial;
+text-align:center;
+color:white;
+padding:50px;
+}
+
+.box{
+background:rgba(255,255,255,0.2);
+padding:30px;
+border-radius:20px;
+max-width:400px;
+margin:auto;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+font-size:16px;
+cursor:pointer;
+margin:10px;
+}
+
+#yes{background:#ff2e63;color:white;}
+#no{background:#333;color:white;position:absolute;}
+
+img{width:250px;border-radius:20px;margin-top:20px;}
+</style>
+</head>
+
+<body>
+
+<div class="box" id="main">
+
+<h2>Hey Karan ❤️</h2>
+<p>Will you be my Valentine?</p>
+<p>From your baby 💕</p>
+
+<button id="yes" onclick="yes()">Yes 😍</button>
+<button id="no" onmouseover="move()">No 😢</button>
+
+</div>
+
+<script>
+
+function yes(){
+document.getElementById("main").innerHTML=`
+<h2>You said YES 😘💖</h2>
+<p>You make my world beautiful 💕</p>
+
+<img src="https://media.giphy.com/media/l0HlNQ03J5JxX6lva/giphy.gif">
+
+<p>Forever yours,<br>your baby ❤️</p>
+`;
+}
+
+function move(){
+let b=document.getElementById("no");
+b.style.left=Math.random()*200+"px";
+b.style.top=Math.random()*200+"px";
+}
+</script>
+
+</body>
+</html>
